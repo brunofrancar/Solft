@@ -21,11 +21,14 @@
         </style>
     </head>
     <div class="antialiased">
-        <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-        <div class= flex>
 
-        <img src="{{asset('/img/cartaocontato.png')}}">
-        </div>
+
+        <video width="1640" height="1640" controls>
+
+            <source src="{{asset('/videos/WhatsApp Video 2022-09-10 at 15.16.40.mp4')}}" autostart="true" height="300" width="1440" />
+
+        </video>
+
 
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
