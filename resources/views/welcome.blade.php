@@ -21,9 +21,12 @@
         </style>
     </head>
     <div class="antialiased">
+<h1 CLASS="text-center">SITE EM CONSTRUÇÃO</h1>
+
+        <embed src="{{asset('/docs/Apresentação SOLICE.pdf')}}" width="1800px" height="2100px" />
 
 
-        <video width="1640" height="1640" controls>
+        <video CLASS="justify-center" controls autoplay width="640" height="480" controls>
 
             <source src="{{asset('/videos/WhatsApp Video 2022-09-10 at 15.16.40.mp4')}}" autostart="true" height="300" width="1440" />
 
@@ -35,7 +38,7 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
+                                       @else
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
                         @if (Route::has('register'))
